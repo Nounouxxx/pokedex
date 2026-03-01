@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Application Web Pokedex :
 
-## Getting Started
+    Une application web Pokédex interactive développée avec Next.js, React, TypeScript et Material-UI, permettant de consulter tous les Pokémon, filtrer par type, visualiser les détails et changer la langue des noms et types.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+FONCTIONNALITES :
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Affichage de tous les Pokémon sous forme de cartes avec :
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    Numéro ID
+    Nom traduit selon la langue sélectionnée
+    Image
+    Types avec couleur spécifique
 
-## Learn More
+- Recherche par nom
+- Filtre par type
+- Détail Pokémon avec :
+    Nom, image, ID
+    Taille (m) et poids (kg)
+    Types
+    Bouton MOVES affichant tous les mouvements
 
-To learn more about Next.js, take a look at the following resources:
+- Sélecteur de langue disponible sur toutes les pages (français, anglais, japonais, etc.)
+- Page 404 personnalisée avec image et bouton de retour à l'accueil
+- Loader animé pendant le chargement des données
+- Compatible avec React Router pour navigation SPA
+- Déployable et déployé sur Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+INSTALLATION :
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Cloner le dépôt :
+
+git clone https://github.com/Nounouxxx/pokedex.git
+cd pokedex
+
+Installer les dépendances : 
+    npm install
+
+Lancer le serveur en développement : 
+    npm run dev (en local)
+ou 
+    $env:PORT=Numéro_du_port; npm run dev
+pour sélectionner un numéro de port précis
+
+Pour la production : 
+    npm run build (pour créer le dossier .next compilés si non présent)
+    npm run start (pour lancer le serveur de production)
+
+Ouvrir http://localhost:3000 (par défault) dans votre navigateur.
+
+
+
+
+
+STRUCTURE DU PROJET :
+
+pokedex/
+├── public/                 # Images et assets publics (logo, loader GIF, 404 image)
+├── src/
+│   ├── components/         # Composants réutilisables (PokemonCard, Header, Loader, etc.)
+│   ├── context/            # Contexte pour la gestion de la langue
+│   ├── pages/              # Pages principales (Home, PokemonDetail, 404)
+│   ├── router/             # Router React Router
+│   ├── styles/             # Styles globaux
+│   └── types/              # Types TypeScript
+├── package.json
+├── tsconfig.json
+└── next.config.js
