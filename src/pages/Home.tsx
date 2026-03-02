@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -12,7 +11,7 @@ import {
 } from "@mui/material";
 import PokemonCard from "@/components/PokemonCard";
 import { Pokemon } from "@/types/pokemon";
-import { useLanguage } from "@/context/LanguageContext"; // ✅ utilise le hook
+import { useLanguage } from "@/context/LanguageContext";
 import Loader from "@/components/Loader";
 
 
@@ -25,7 +24,7 @@ interface TypesJSON {
 }
 
 export default function Home() {
-  const { language } = useLanguage(); // ✅ récupère la langue ici
+  const { language } = useLanguage();
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);
   const [types, setTypes] = useState<TypesJSON>({});
   const [searchText, setSearchText] = useState("");

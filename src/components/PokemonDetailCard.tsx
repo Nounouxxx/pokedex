@@ -1,4 +1,3 @@
-// src/components/PokemonDetailCard.tsx
 "use client";
 
 import React, { useState } from "react";
@@ -119,14 +118,14 @@ export default function PokemonDetailCard({
 
       {/* Bouton moves */}
       <Button
-        variant="outlined"       // bouton sans remplissage, juste contour
+        variant="outlined"
         sx={{
             mt: 2,
-            borderColor: "orange", // couleur du contour
-            color: "orange",       // couleur du texte
+            borderColor: "orange",
+            color: "orange",
             "&:hover": {
-            borderColor: "darkorange", // couleur du contour au survol
-            backgroundColor: "rgba(255,165,0,0.1)", // léger fond au survol si souhaité
+            borderColor: "darkorange",
+            backgroundColor: "rgba(255,165,0,0.1)",
             },
         }}
         onClick={handleOpenMoves}

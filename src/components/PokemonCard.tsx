@@ -38,8 +38,8 @@ export default function PokemonCard({
         width: 250,
         textAlign: "center",
         cursor: "pointer",
-        backgroundColor: "white", // fond blanc uniforme
-        borderRadius: 5, // coins arrondis
+        backgroundColor: "white",
+        borderRadius: 5,
         position: "relative",
         boxShadow: 1,
       }}
@@ -53,9 +53,8 @@ export default function PokemonCard({
         top: 8,
         left: 8,
         fontWeight: "bold",
-        color: "#000", // texte noir
-        backgroundColor: "rgba(255, 255, 255, 0.7)", // léger fond blanc semi-transparent pour contraste
-        padding: "2px 4px",
+        color: "#000",
+        backgroundColor: "rgba(255, 255, 255, 0.7)",
         borderRadius: 1,
       }}
     >
@@ -78,7 +77,7 @@ export default function PokemonCard({
       <CardContent sx={{ backgroundColor: "#fff", paddingTop: 1 }}>
   <Typography 
     variant="h6" 
-    sx={{ color: "#000", fontWeight: 800 }} // couleur noire bien visible
+    sx={{ color: "#000", fontWeight: 800 }}
   >
     {pokemon.names[language]}
   </Typography>

@@ -47,11 +47,11 @@ export default function Custom404() {
         onClick={() => navigate("/")}
         sx={{
           mt: 3,
-          borderColor: "red",        // contour rouge
-          color: "white",              // texte rouge
-          backgroundColor: "rgba(128,128,128,0.2)", // gris semi-transparent
+          borderColor: "red",
+          color: "white",
+          backgroundColor: "rgba(128,128,128,0.2)",
           "&:hover": {
-          backgroundColor: "rgba(128,128,128,0.3)", // légèrement plus foncé au survol
+          backgroundColor: "rgba(128,128,128,0.3)",
           borderColor: "red",
           },
         }}

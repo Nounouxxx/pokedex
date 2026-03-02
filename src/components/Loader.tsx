@@ -12,7 +12,7 @@ export default function Loader() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "50vh", // moitié de la hauteur de la page pour centrer
+        height: "50vh",
       }}
     >
       <img

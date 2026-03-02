@@ -6,11 +6,6 @@ import {
   Typography,
   Chip,
   Button,
-  Modal,
-  List,
-  ListItem,
-  ListItemText,
-  CircularProgress,
 } from "@mui/material";
 import { useParams, useNavigate } from "react-router-dom";
 import { Pokemon } from "@/types/pokemon";
@@ -68,7 +63,7 @@ export default function PokemonDetail() {
   }
 
 if (!pokemon) {
-  return <Navigate to="/404" replace />;  // ⚠ redirige vers la page NotFound
+  return <Navigate to="/404" replace />;
 }
 
   return (

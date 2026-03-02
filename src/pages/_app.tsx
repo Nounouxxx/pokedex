@@ -8,7 +8,7 @@ export default function MyApp() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <ClientApp /> {/* ⚠ ClientApp va inclure BrowserRouter + Header + AppRouter */}
+      <ClientApp />
     </ThemeProvider>
   );
 }
