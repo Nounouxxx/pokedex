@@ -1,4 +1,3 @@
-// _app.tsx
 import "../styles/globals.css";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import theme from "@/theme";
